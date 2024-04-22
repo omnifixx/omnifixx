@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnifixx</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            height: 18vh;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            height: 17vh;
+            width: 100vw;
+        }
+        .content {
+            padding: 20px;
+            display: grid;
+            grid-gap: 10px;
+            height: 65vh;
+            width: 100vw;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav {
+            margin-left: auto;
+        }
+         header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+        }
+        .nav {
+            border: 1px solid black;
+            border-radius: 10%;
+            overflow: hidden;
+
+        }
+        .nav h1{
+            margin: 0;
+            text-align: center;
+            padding: 0;
+            height: 25%;
+            width: 100%;
+            color: white;
+            font-size: 15px;
+            background-color: #333;
+            padding: 15px 0;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .img {
+            width: 100%;
+            height: 75%;
+            background-size:     cover;
+            background-repeat:   no-repeat;
+            background-position: center center;
+        }
+        #i1 {
+            background-image: url("1.jpg");
+        }
+        #i2 {
+            background-image: url("2.jpg");
+        }
+        #i3 {
+            background-image: url("3.jpg");
+        }
+        #i4 {
+            background-image: url("4.jpg");
+        }
+        #i5 {
+            background-image: url("5.jpg");
+        }
+        #i6 {
+            background-image: url("6.jpg");
+        }
+        .info {
+            display: none;
+        }
+        .nav:hover .img {
+            display: none;
+        }
+        .nav:hover .info {
+            display: block;
+            height: 75%;
+            width: 100%;
+            color:  black;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OMNIFIXX</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="nav">
+            <h1>asdw</h1>
+            <p class="info">
+                dawdafawfafwafgfageaga
+            </p>    
+            <div class="img" id="i1"></div>
+        </div>
+        <div class="nav">
+            <h1></h1>
+            <p class="info"></p>
+            <div class="img" id="i2"></div>
+        </div>
+        <div class="nav">
+            <h1></h1>
+            <p class="info"></p>
+            <div class="img" id="i3"></div>
+        </div>
+        <div class="nav">
+            <h1></h1>
+            <p class="info"></p>
+            <div class="img" id="i4"></div>
+        </div>
+        <div class="nav">
+            <h1></h1>
+            <p class="info"></p>
+            <div class="img" id="i5"></div>
+        </div>
+        <div class="nav">
+            <h1></h1>
+            <p class="info"></p>
+            <div class="img" id="i6"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
