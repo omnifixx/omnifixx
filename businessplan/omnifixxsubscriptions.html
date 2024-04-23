@@ -1,0 +1,302 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnifixx</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(house.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            height: 18vh;
+            text-align: center;
+            background: rgb(0,105,112);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+        }
+        header nav {
+            margin-left: auto;
+        }
+
+        header img{
+            height: 200px;
+            width: 350px;
+            padding: 40px; 
+            margin: 50px;       
+        }
+        header a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+       header nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            transition: font-size 0.3s ease;
+            background-color: white;
+            padding: 13px;  
+            border-radius: 20px;
+            background: rgb(194,93,55);
+            font-weight: bold;
+        }
+
+        footer {
+            background: rgb(0,105,112);
+            color: #fff;
+            padding: 20px;
+            -webkit-box-sizing: border-box; 
+            -moz-box-sizing: border-box;    
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            height: 10vh;
+            width: 100vw;
+        }
+
+        header nav a:hover {
+            font-size: 18px;
+        }
+
+        .content {
+            padding: 10px;
+            display: grid;
+            height: 65vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .nav1, .nav2, .nav3 {
+            border-radius: 7%;
+            overflow: hidden;
+            background-color: white;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 320px;
+            height: 350px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-center;
+        }
+
+        .nav1 p,.nav2 p, .nav3 p{
+            margin: 0px;
+        }
+
+        .nav1 {
+            border: 5px solid gold;
+        }
+
+        .nav2 {
+            border: 5px solid silver;
+        }
+
+        .nav3 {
+            border: 5px solid orange;
+        }
+
+        .nav1 h1{
+            color: gold;
+            text-align: center;
+            font-family: "Montserrat";
+            margin-bottom: auto;
+            border-bottom: 3px solid gold;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .nav2 h1{
+            color: silver;
+            text-align: center;
+            font-family: "Montserrat";
+            margin-bottom: auto;
+            border-bottom: 3px solid silver;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+         .nav3 h1{
+            color: orange;
+            text-align: center;
+            font-family: "Montserrat";
+            margin-bottom: auto;
+            border-bottom: 3px solid orange;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        ul li{
+            color: rgb(0,105,112);
+            font-family: "Open Sans";
+        }
+
+        ul{
+             margin-bottom: auto;
+        }
+        .nav1 a{
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            transition: font-size 0.3s ease;
+            padding: 13px;  
+            border-radius: 20px;
+            background-color: gold;
+            font-weight: bold;
+            margin-top: auto;
+
+        }
+
+        .nav2 a{
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            transition: font-size 0.3s ease;
+            padding: 13px;  
+            border-radius: 20px;
+            background-color: silver;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        .nav3 a{
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            transition: font-size 0.3s ease;
+            padding: 13px;  
+            border-radius: 20px;
+            background-color: orange;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        .nav1 a:hover {
+            font-size: 18px;
+        }
+
+        .nav2 a:hover {
+            font-size: 18px;
+        }
+
+        .nav3 a:hover {
+            font-size: 18px;
+        }
+
+        .link-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 15px;
+            padding: 13px;  
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        p{
+            padding-left: 20px;
+            font-size: 10px;
+        }
+
+        .gold{
+            background-color: gold;
+            margin-left: 20px;
+            margin-right: 190px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        .silver{
+            background-color: silver;
+            margin-left: 20px;
+            margin-right: 190px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        .bronze{
+            background-color: orange;
+            margin-left: 20px;
+            margin-right: 190px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="omnifixx.png">
+        <nav>
+             <a href="omnifixxaboutus.html">About Us</a>
+            <a href="omnifixxhome.html">Home</a>
+            <a href="omnifixxservices.html">Services</a>
+        </nav>
+    </header>
+
+ <div class="content">
+    <div class="nav3">
+            <div class="bronze"><p>3 €/month</p></div>
+            <h1>Bronze-Users</h1>
+            <ul>
+                <li>First Booking Discount (new Client).</li>
+                <li>Seasonal Special Offers (at certain times).</li>
+            </ul>
+            <div class="link-container"><a href="omnifixxpaymentbronze.html">Get Bronze-Subscription</a></div>
+        </div>
+    <div class="nav2">
+            <div class="silver"><p>3 €/month</p></div>
+            <h1>Silver-Users</h1>
+            <ul>
+                <li>Discount for repeat bookings or early booking discounts.</li>
+                <li>Refer-A-Friend-Bonus: If the user refers friends to the platform.</li>
+            </ul>
+            <div class="link-container"><a href="omnifixxpaymentsilver.html">Get Silver-Subscription</a></div>
+        </div>
+        <div class="nav1">
+            <div class="gold"><p>5 €/month</p></div>
+            <h1>Gold-Users</h1>
+            <ul>
+                <li>Exclusive Discounts for selected services.</li>
+                <li>VIP-Service(Repair & Care) - Priority customers and fast access at peak times.</li>
+                <li>Points Program - Bonus points for every booking with additional discounts.</li>
+            </ul>
+            <div class="link-container"><a href="omnifixxpaymentgold.html">Get Gold-Subscription</a></div>     
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 OMNIFIXX. All rights reserved.</p>
+    </footer>
+</body>
+</html>
