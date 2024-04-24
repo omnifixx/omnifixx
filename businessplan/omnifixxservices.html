@@ -80,8 +80,11 @@
             padding: 60px;
             height: calc(50vh - 120px);
             width: 100vw;
+            height: 100vh;
             color: white;
-            display: flex;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -220,6 +223,21 @@
             }
             header nav a:hover {
                 font-size: 10px;
+            }
+            .content {
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+            .nav h1 {
+                font-size: 15px;
+            }
+            .nav .info li {
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            .nav:hover .info {
+                padding: 10;
             }
         }
         
