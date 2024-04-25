@@ -119,6 +119,56 @@
             border-radius: 7.5%;
             font-family: "Open Sans";
         }
+        .team-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.team {
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.team img {
+    width: 30%;
+    height: auto;
+    border: 5px solid rgb(194, 93, 55);
+    margin-bottom: 15px;
+}
+
+.team div {
+    text-align: center;
+    width: 60%;
+}
+
+.team a {
+    text-decoration: none;
+    background-color: rgb(0,105,112);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "Montserrat";
+}
+
+/* Apply transparency only to the background of team boxes */
+.team-row .team {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.last-image-container {
+    text-align: center;
+}
+
+.last-image {
+    max-width: 70%; /* Adjusted width for the last image */
+    height: auto;
+    border: 8px solid rgb(194, 93, 55);
+}
          @media only screen and (max-width: 768px) {
             header {
                 height: 15vh;
@@ -192,6 +242,49 @@
     <p>Official Organisation E-Mail: <a href="mailto:omnifixxteam@outlook.com">omnifixxteam@outlook.com</a></p>
     <p>Follow Us On Instagram And Keep Up With Our Latest Projects! --> <a href="https://www.instagram.com/omnifixx.al?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">omnifixx.al</a></p>
 
+</div>
+    <div class="team-row">
+    <div class="team">
+        <img src="stefi.jpg">
+        <div>
+            <h1>Stefi Fushaj</h1>
+            <p>CEO - Coordinator</p>
+            <a href="mailto:SteFus19@htl-shkoder.com">SteFus19@htl-shkoder.com</a>
+        </div>
+    </div>
+
+    <div class="team">
+        <img src="nedit.jpg">
+        <div>
+            <h1>Nedit Xhaferi</h1>
+            <p>Marketing - Expert</p>
+            <a href="mailto:NedXha19@htl-shkoder.com">NedXha19@htl-shkoder.com</a>
+        </div>
+    </div>
+</div>
+
+<div class="team-row">
+    <div class="team">
+        <img src="jonejda.jpg">
+        <div>
+            <h1>Jonejda Zaimi</h1>
+            <p>Marketing - Expert</p>
+            <a href="mailto:JonZai19@htl-shkoder.com">JonZai19@htl-shkoder.com</a>
+        </div>
+    </div>
+
+    <div class="team">
+        <img src="ditmar.jpg">
+        <div>
+            <h1>Ditmar Zekja</h1>
+            <p>Financial Planner</p>
+            <a href="mailto:DitZek19@htl-shkoder.com">DitZek19@htl-shkoder.com</a>
+        </div>
+    </div>
+</div>
+
+<div class="last-image-container">
+    <img class="last-image" src="team.jpg">
 </div>
     <footer>
         <p>&copy; 2024 OMNIFIXX. All rights reserved.</p>
